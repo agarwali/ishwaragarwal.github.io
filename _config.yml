@@ -1,3 +1,4 @@
 url: www.ishwaragarwal.me
+# baseurl: ""
 exclude: ['README.md']
 permalink: pretty

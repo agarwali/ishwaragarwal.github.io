@@ -16,11 +16,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav">
-        <li><a href="/about">about</a></li>
-        <li><a href="/featured">featured</a></li>
-        <li><a href="#">portfolio</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">contact</a></li>
+        {% for item in include.nav %}
+          {% assign current = nil %}
+          {% if page.url contains item.url %}
+              {% assign current = 'active' %}
+          {% endif %}
+          <li class="{{ current }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li>
