@@ -1,0 +1,31 @@
+.navbar-static-top .nav {
+    padding: 15px;
+}
+
+.navbar {
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 0;
+}
+
+ @media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) { 
+    .navbar-brand {
+        padding: 0;        
+    }
+
+    .navbar-brand img {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+}
