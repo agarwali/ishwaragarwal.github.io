@@ -1,0 +1,22 @@
+- name: Angular2
+  percentage: 60%
+- name: Python
+  percentage: 70%
+- name: C/C++
+  percentage: 40%
+- name: Ruby
+  percentage: 30%
+- name: HTML
+  percentage: 100%
+- name: CSS
+  percentage: 80%
+- name: JavaScript
+  percentage: 80%
+- name: PHP
+  percentage: 50%
+- name: SQL
+  percentage: 50%
+- name: RESTFul Api
+  percentage: 75%
+- name: MATLAB
+  percentage: 50%

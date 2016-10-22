@@ -1,0 +1,37 @@
+<!-- About Section start -->
+<section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="clearfix about-inner">
+
+        <div class="col-sm-12 col-md-6">
+          <div class="person-about">
+            <h3 class="about-subtitle">My Story</h3>
+            <p>{{include.about.story}}</p>
+            <a href="{{site.baseurl}}/resume/{{include.about.resume}}" class="waves-effect waves-light btn-large brand-bg white-text"><i class="mdi-content-archive left"></i> Download Resume</a>
+          </div>
+        </div>
+        <!-- about me description -->
+
+        <div class="col-sm-6 col-md-6">
+          <div class="person-img wow fadeIn">
+            <img class="z-depth-1" src="images/person.jpg" alt="">
+          </div>
+          <div class="about-social">
+            <ul>
+              {% for item in include.social %}
+              <li>
+                <a href="{{ item.url }}" class="btn-floating waves-effect waves-light white"><i class="fa fa-{{ item.title }}"></i></a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <!-- about me image -->
+
+      </div>
+    </div>
+  </div>
+  <!-- .container end -->
+</section>
+<!-- #about Section end -->

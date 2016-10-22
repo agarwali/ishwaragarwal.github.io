@@ -1,0 +1,10 @@
+- name: Berea College
+  start: 2014
+  end: 2018
+  degree: Bachelors of Arts
+  description: Currently completing my bachelors degree in Computer Science and Mathematics.
+- name: European Standard School
+  start: 2011
+  end: 2013
+  degree: A Level
+  description: Achieved A's in A Level Physics, Chemistry, Biology, Mathematics.

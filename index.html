@@ -1,7 +1,22 @@
 ---
 layout: base
 ---
-<img src="//placehold.it/1624x735" class="img-responsive">
-<h1>sdf</h1>
-<h1>sad</h1>
-<h1>sdf</h1>
+{% include home.html %}
+
+{% include about.html social = site.data.social about = site.data.about %}
+
+{% include skills.html skills = site.data.skills %}
+
+{% include experience.html experience = site.data.experience %}
+
+{% include education.html education = site.data.education %}
+
+{% include portfolio.html projCat = site.data.projectCategories %}
+
+{% include funfacts.html %}
+
+{% include blog.html %}
+
+{% include contact.html %}
+
+{% include footer.html %}

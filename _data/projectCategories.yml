@@ -1,0 +1,10 @@
+- key: all
+  name: ALL
+- key: web-app
+  name: Web Apps
+- key: mob-app
+  name: Mobile Apps
+- key: algorithm
+  name: Algortihm
+- key: design
+  name: Design

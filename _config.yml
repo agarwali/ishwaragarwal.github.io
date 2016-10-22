@@ -1,4 +1,7 @@
-url: www.ishwaragarwal.me
-# baseurl: ""
+url: www.ishwaragarwal.com
+baseurl: ""
 exclude: ['README.md']
 permalink: pretty
+sass:
+  sass_dir: _scss
+  style: compressed

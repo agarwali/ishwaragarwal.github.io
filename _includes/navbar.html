@@ -1,47 +1,76 @@
-<nav class="navbar navbar-inverse navbar-static-top">
+<!-- header navigation start -->
+<header id="navigation" class="root-sec white nav">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{site.baseurl}}/">
-        <img class="hidden-xs" src="http://placehold.it/150x50&text=Logo" alt="">
-        <img class="visible-xs" src="http://placehold.it/120x40&text=Logo" alt=""> 
-      </a>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="nav-inner">
+          <nav class="primary-nav">
+            <div class="clearfix nav-wrapper">
+              <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home"><img src="images/logo.png" alt="">
+              </a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+              <ul class="right static-menu">
+                <li class="search-form-li">
+                  <a id="initSearchIcon" class=""><i class="mdi-action-search"></i> </a>
+                  <div class="search-form-wrap hide">
+                    <form action="#" class="">
+                      <input type="search" class="search">
+                      <button type="submit"><i class="mdi-action-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </li>
+                <li>
+                  <a class="dropdown-button blog-submenu-init" href="#!" data-activates="dropdown1">
+                    <i class="mdi-navigation-more-vert right"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="inline-menu side-nav" id="mobile-demo">
+
+              <!-- Mini Profile // only visible in Tab and Mobile -->
+                <li class="mobile-profile">
+                 <div class="profile-inner">
+                    <div class="pp-container">
+                        <img src="images/person.jpg" alt="">
+                    </div>
+                    <h3>John Doe</h3>
+                    <h5>Creative UI/UX Expert</h5>
+                  </div>
+                </li><!-- mini profile end-->
+
+
+                <li><a href="#about" data-section="#about" class="menu-smooth-scroll"><i class="fa fa-user fa-fw"></i>About Me</a>
+                </li>
+                <li><a href="#resume" data-section="#resume" class="menu-smooth-scroll"><i class="fa fa-file-text fa-fw"></i>Resume</a>
+                </li>
+                <li><a href="#portfolio" data-section="#portfolio" class="menu-smooth-scroll"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
+                </li>
+                <li><a href="#team" data-section="#team" class="menu-smooth-scroll"><i class="fa fa-users fa-fw"></i>Team</a>
+                </li>
+                <li><a href="#testimonial" data-section="#testimonial" class="menu-smooth-scroll"><i class="fa fa-comments fa-fw"></i>Testimonial</a>
+                </li>
+                <li><a href="#blog" data-section="#blog" class="menu-smooth-scroll"><i class="fa fa-pencil fa-fw"></i>Blog</a>
+                </li>
+                <li><a href="#contact" data-section="#contact" class="menu-smooth-scroll"><i class="fa fa-paper-plane fa-fw"></i>Contact</a>
+                </li>
+              </ul>
+              <ul id="dropdown1" class="inline-menu submenu-ul dropdown-content">
+                <li>Home</li>
+                <li><a href="blog.html">All Blog</a>
+                </li>
+                <li><a href="blog-with-sidebar.html">Blog with Sidebar</a>
+                </li>
+                <li><a href="single.html">Single Blog</a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav">
-        {% for item in include.nav %}
-          {% assign current = nil %}
-          {% if page.url contains item.url %}
-              {% assign current = 'active' %}
-          {% endif %}
-          <li class="{{ current }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="#" title="Follow me on Twitter">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" title="Connect with me on LinkenIn">
-          <i class="fa fa-linkedin fa-3" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" title="Follow me on Github">
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-    </div><!-- /.navbar-collapse -->
-    
-  </div><!-- /.container-fluid -->
-</nav>
+  </div>
+  <!-- .container end -->
+</header>
+<!-- #header  navigation end -->
