@@ -1,8 +1,8 @@
 ---
 layout: post
-title: First Blog Post
+title: Second Blog Post
 subtitle:
-category: foss
+category: entrepreneurship
 date: 2016-01-18 05:00:00
 author: Ishwar Agarwal
 comments: true

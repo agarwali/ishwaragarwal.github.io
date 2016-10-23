@@ -56,7 +56,7 @@ $(document).ready(function($){
 
 	var sklSlider = $("#skillSlider");
 
-	
+
 	// sklSlider.owlCarousel({
 	// 	slideSpeed: 400,
 	// 	items : 6,
@@ -390,7 +390,7 @@ $(document).ready(function($){
 		function getActiveSectionLength(section, sections) {
 			return sections.index(section);
 		}
-		
+
 		if ( sections.length > 0 ) {
 
 
@@ -591,7 +591,7 @@ $(document).ready(function($){
 
 
 $(window).load(function(){
-	
+
 	// section calling
 	$('.section-call-to-btn.call-to-home').waypoint({
 		handler: function(event, direction) {
@@ -605,7 +605,7 @@ $(window).load(function(){
 		offset: '90%'
 	});
 
-	
+
 	$('.section-call-to-btn.call-to-about').delay(1000).fadeIn(0, function(){
 		var $this = $(this);
 		$this.removeClass('btn-hidden');
@@ -674,7 +674,7 @@ $(window).load(function(){
 			portTitle = portfolioModal.find('.modal-content .title'),
 			portContent = portfolioModal.find('.modal-content .m-content'),
 			portLink = portfolioModal.find('.modal-footer .modal-action');
-		
+
 		$('#protfolio-msnry').delegate('a.modal-trigger', 'click', function(e){
 			e.preventDefault();
 			var $this = $(this);

@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Home
 ---
 {% include home.html %}
 
@@ -13,10 +14,8 @@ layout: base
 
 {% include portfolio.html projCat = site.data.projectCategories %}
 
-{% include funfacts.html %}
+{% include funfacts.html funFacts = site.data.funFacts %}
 
 {% include blog.html %}
 
 {% include contact.html %}
-
-{% include footer.html %}

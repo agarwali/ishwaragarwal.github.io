@@ -1,9 +1,84 @@
 ---
 layout: base
 ---
-<div class="container">
-<h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+<!-- Banner start -->
+ <section id="banner" class="root-sec brand-bg padd-tb-55 single-banner blogpage-banner-wrap">
+   <div class="container">
+     <div class="row">
+       <div class="clearfix blog-banner-text blog-single-banner">
+         <div class="col-md-12">
+           <h2 class="title">{{ page.title }}</h2>
+           <ul class="clearfix blog-post-meta">
+             <li>By {% if page.author %}{{ page.author }}{% endif %}
+             </li>
+             <li>{{ page.date | date: "%b %-d, %Y" }}</li>
+             <!-- <li><a href="#">5 Comments</a> -->
+             </li>
+             <li><a href="#">{{ page.category }}</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section> <!-- ./Banner end -->
 
-{{ content }}
-</div>
+  <!-- Blog Post Container-->
+ <section id="all-posts" class="root-sec grey lighten-5 blogpage-posts-wrap">
+   <div class="container">
+     <div class="row">
+       <div class="clearfix all-blog-post blog-inner with-sidebar">
+
+       <!-- post container start-->
+         <div class="col-sm-8">
+           <article class="single-post-page">
+             <div class="thumb-wrap">
+               <img src="{{site.baseurl}}/images/single-blog.png" alt="">
+             </div>
+             <div class="single-post-content">{{content}}</div>
+            {% include socialShare.html %}
+           </article>
+         </div> <!-- ./post container end-->
+
+         <!-- Sidebar start-->
+         <div class="col-sm-4">
+           <div class="primary-sidebar">
+             <aside class="single-widget">
+               <h2 class="widget-title">RECENT POSTS</h2>
+               <ul>
+                 {% for post in site.posts limit:5 %}
+                 <li>
+                   <a href="{{ post.url | prepend: site.baseurl}}">{{ post.title }}</a>
+                   <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                 </li>
+                 {% endfor %}
+               </ul>
+             </aside>
+             <aside class="single-widget">
+               <h2 class="widget-title">CATEGORIES</h2>
+               <ul>
+                 {% for category in site.data.blogCategories %}
+                 <li><a href="#">{{category.name}}</a>
+                 </li>
+                 {% endfor %}
+               </ul>
+             </aside>
+             <!-- <aside class="single-widget">
+               <h2 class="widget-title">ARCHIVES</h2>
+               <ul>
+                 <li><a href="#">March 24, 2015</a>
+                 </li>
+               </ul>
+             </aside>
+             <aside class="single-widget">
+               <h2 class="widget-title">TAGS</h2>
+               <div class="widget-text">
+                 <a href="#" class="tags">Art</a>
+               </div>
+             </aside> -->
+           </div>
+         </div> <!-- ./sidebar end-->
+       </div>
+     </div>
+   </div> <!-- ./container end-->
+ </section>  <!-- ./Blog Post Container end-->

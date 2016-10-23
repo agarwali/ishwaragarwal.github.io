@@ -21,7 +21,7 @@
             <ul>
               {% for item in include.social %}
               <li>
-                <a href="{{ item.url }}" class="btn-floating waves-effect waves-light white"><i class="fa fa-{{ item.title }}"></i></a>
+                <a href="{{ item.url }}" class="btn-floating waves-effect waves-light white" title="{{ item.title }}"><i class="fa fa-{{ item.title }}"></i></a>
               </li>
               {% endfor %}
             </ul>

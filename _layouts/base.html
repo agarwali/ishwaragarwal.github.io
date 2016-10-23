@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ishwar Agarwal</title>
+  <title>{{ page.title }} - Ishwar Agarwal </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   {% include cssLinks.html %}
@@ -17,9 +17,10 @@
 
 <body>
   <!-- Main Container -->
-  <main id="app" class="main-section">
+  <main id="app" class="">
     {% include navbar.html nav=site.data.menu %}
     {{content}}
+    {% include footer.html social = site.data.social %}
   </main>
   <!-- Main Container end-->
   {% include jScript.html %}

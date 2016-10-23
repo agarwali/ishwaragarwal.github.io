@@ -99,7 +99,7 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    /*font: inherit;*/
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -387,17 +387,29 @@ section.brand-bg .title {
 /* --------------------------------- */
 /* 3. Navigation Menu Styles
  ----------------------------------- */
+ nav {
+   background-color: #fff;
+ }
+ nav .nav-wrapper {
+     position: relative;
+     height: 100%;
+     margin-left: 20px;
+     margin-right: 20px;
+     background-color: #fff;
+ }
 
-header.nav {
-    box-shadow: 0 1px 6px rgba(0,0,0,.35);
-    width: 100%;
-    top: 0px;
-    position: fixed;
-    z-index: 999;
-    -webkit-transition: top .5s;
-            transition: top .5s;
-}
-header.nav.hide-menu {
+ nav .nav-wrapper .brand-logo {
+   color: #799CAC;
+   font-family: 'Megrim', cursive;
+   font-weight: 900;
+
+ }
+
+ nav .nav-wrapper li a {
+     color: #727272;
+ }
+
+.nav.hide-menu {
     top: -90px;
 }
 .primary-nav {
@@ -654,7 +666,6 @@ header.nav.hide-menu {
 
 .person-img img {
     border: 8px solid #fff;
-
 }
 
 .person-about p {
@@ -960,9 +971,13 @@ header.nav.hide-menu {
     margin-bottom: 50px;
 }
 
+.portfolio-text {
+    color: #fff;
+}
+
 .portfolio-top .title {
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
 .portfolio-category {}
@@ -1351,7 +1366,7 @@ span.num {
 
 .context {
     color: #727272;
-    font-size: 13px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -1360,9 +1375,9 @@ span.num {
 }
 
 .funfact-box-inner  i {
-    color: #dbdbdb;
-    font-size: 60px;
-    margin-bottom: 13px;
+    color: #799cac;
+    font-size: 75px;
+    margin-bottom: 20px;
     display: block;
 
 }

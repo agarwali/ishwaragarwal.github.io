@@ -1,8 +1,15 @@
-- title: about
+- title: ABOUT ME
   url: about
-- title: featured
-  url: featured
-- title: blog
+  icon: fa-user
+- title: RESUME
+  url: resume
+  icon: fa-file-text
+- title: PORTFOLIO
+  url: portfolio
+  icon: fa-briefcase
+- title: BLOG
   url: blog
-- title: contact
+  icon: fa-pencil
+- title: CONTACT
   url: contact
+  icon: fa-paper-plane
