@@ -1,6 +1,28 @@
 - name: Berea College
   logo: berea_college.png
+  url: https://www.berea.edu/
   start: May 2016
   end: Present
   position: Co-Lead Teaching Assistant
   description: Manage a team of 18 Teaching Assistants, organize weekly departmental meetings and assist faculty in managing data structures course and tutor students in the weekly lab for a class of 53 students
+- name: Berea College
+  logo: berea_college.png
+  url: https://www.berea.edu/
+  start: August 2015
+  end: Present
+  position: Student Programmer
+  description: Design and develop 3 web applications used by 1600+ students and 300+ faculty and staff at Berea College working within a team of 8 students to make administrative workflow more efficient and reduce costs by $20,000
+- name: Interapt
+  logo: interapt.png
+  url: http://interapt.com/
+  start: May 2016
+  end: July 2016
+  position: Software Developer Intern
+  description: Built the client-side of a single-page web application to handle employee information more securely using Angular 2 framework by creating user access control, and reducing human errors.
+- name: BookShopBD.com
+  logo: bookshopbd.png
+  url: https://www.bookshopbd.com/index.php?route=information/information&information_id=28
+  start: February 2013
+  end: May 2015
+  position: CEO and Co-founder
+  description: Co-founded and co-developed an online bookstore startup in Bangladesh and remotely managed website and business operations of the store.
