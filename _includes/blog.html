@@ -18,8 +18,15 @@
                 <div class="card wow fadeInUpSmall" data-wow-duration=".7s">
                   <div class="card-image">
                     <div class="card-img-wrap">
-                      <div class="blog-post-thumb waves-effect waves-block waves-light">
-                        <a href="{{ post.url | prepend: site.baseurl }}"><img class="activator" src="images/blog1.jpg" alt="">
+                      <div class="blog-post-thumb waves-effect waves-block waves-light
+                        {% if post.media == 'video' %} videoPost{% endif %}"
+                        >
+                        {% if post.media == 'image' %}
+                        <a href="{{ post.url | prepend: site.baseurl }}"><img class="activator" src="{{ post.media_source }}" alt="">
+                        {% endif %}
+                        {% if post.media == 'video' %}
+                        <iframe src="{{ post.media_source }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        {% endif %}
                         </a>
                       </div>
                       <div class="post-body">

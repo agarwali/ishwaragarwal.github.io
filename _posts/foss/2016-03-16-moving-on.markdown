@@ -1,0 +1,46 @@
+---
+author: agarwali
+comments: true
+date: 2016-03-16 14:00:47+00:00
+layout: post
+title: Moving On
+meta:
+category: foss
+excerpt_separator: <!--more-->
+media:
+media_source:
+---
+
+
+
+I am switching my project from OpenMRS to OctoPrint.
+
+You might have noticed that I have not blogged in the last few weeks. It is not because I have not been working on OpenMRS. I have been working really hard to get a new module into the OpenMRS standalone but have failed seriously. I've not achieved any substantial success that was worth posting.
+<!--more-->
+After spring break on Monday Mar 14,  [Dr. Matt Jadud](http://jadud.com/) gave my OpenMRS the opportunity to switch project. And, I decided to move on.
+
+<blockquote>
+
+>
+> ### "It’s better to end something and start another than to imprison yourself in hoping for the impossible. Life can never promise to always be happy but life gets better after you accept things you just can’t change." - Marion Ashley
+>
+>
+</blockquote>
+
+
+I decided to move on for two main reasons:
+
+
+
+
+  1. At difficult times, it has been hard to reach out to the OpenMRS community and get a qualitative response back.
+
+
+  2. It is difficult to follow the wiki/guidelines since they are outdated most of the times.
+
+
+In regards to moving on, one of our OpenMRS members, [Kye Hoover](https://hooverkblog.wordpress.com/) and I decided to switch our projects to [OctoPrint](http://octoprint.org/). This is a very interesting project. In one sentence, OctoPrint is a host software that controls and sends print commands to 3D printers.
+
+This project is mostly written in JavaScript and Python on top of Flask framework, something that I am familiar with. But I am looking forward to learn the new tools used by OctoPrint, in the process of resolving issues and bugs.
+
+With all that being said, I am not quitting on OpenMRS. I was able to fix some issues on OpenMRS. It is only the matter of testing my changes and see if my changes are accepted in the community. I will keep pushing.

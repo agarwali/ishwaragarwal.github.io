@@ -1,6 +1,10 @@
 - name: Entrepreneurship
   key: entrepreneurship
 - name: Free and Open Source Software
-  key: foss
+  key: foss-engineering
+- name: Internship 2016
+  key: internship-2016
+- name: Embedded System
+  key: embedded-systems
 - name: Uncategorized
   key: uncategorized
