@@ -14,7 +14,13 @@ layout: base
              <li>{{ page.date | date: "%b %-d, %Y" }}</li>
              <!-- <li><a href="#">5 Comments</a> -->
              </li>
-             <li><a href="#">{{ page.category }}</a>
+             <li><a href="{{ page.category | prepend:'category' | prepend:site.baseurl }}">
+               {% for cat in site.data.blogCategories %}
+                {% if cat.key == page.category %}
+                {{cat.name}}
+                {% endif %}
+               {% endfor %}
+              </a>
              </li>
            </ul>
          </div>
