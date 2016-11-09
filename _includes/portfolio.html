@@ -38,8 +38,8 @@
     </div>
 
     <div class="modal-footer">
-      <a href="#" class="waves-effect btn-flat brand-text modal-action"><i class="fa fa-github right"></i>View Source</a>
-      <!-- <a href="#" target="_blank" class="waves-effect btn-flat brand-text">Details</a> -->
+      <a href="#" target="_blank" class="waves-effect btn-flat brand-text source-link left"><i class="fa fa-github right"></i>View Source</a>
+      <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Details</a>
       <a class="waves-effect btn-flat brand-text modal-close">cancel</a>
     </div>
   </div>
@@ -53,9 +53,16 @@
             {% if project.type == "project" %}
             <!-- Single Portfolio-->
             <li class="single-port-item {{project.category}}">
-              <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="{{project.photo}}" data-title="{{project.title}}" data-content="{{project.description}}" data-demo-link="{{project.github-url}}"> <!-- Portfolio pop-up content-->
+              <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="{{project.photo}}" data-title="{{project.title}}" data-content="{{project.description}}" data-details-link="{{project.url | prepend: site.baseurl }}" data-source-link="{{project.github-url}}"> <!-- Portfolio pop-up content-->
                 <div class="protfolio-image">
-                  <img src="images/portfolio/pf1.jpg" alt="portfolio"> <!-- portfolio thumbnail-->
+                  <img
+                  src= "{% if project.thumbnail %}
+                        {{site.baseurl}}/images/portfolio/{{project.thumbnail}}
+                        {% elsif project.media_source %}
+                        {{site.baseurl}}/images/portfolio/{{project.media_source}}
+                        {% else %}
+                        {{site.baseurl}}/images/portfolio/pf1.jpg
+                        {% endif %}" alt="portfolio"> <!-- portfolio thumbnail-->
                   <div class="protfolio-content waves-effect waves-block waves-light">
                     <div class="protfolio-content__inner">
                       <h2 class="p-title">{{project.title}}</h2>

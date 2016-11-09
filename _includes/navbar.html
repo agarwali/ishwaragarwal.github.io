@@ -2,7 +2,7 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      <a href="#!" class="brand-logo">I A</a>
+      <a href="{{site.baseurl}}/#" class="brand-logo">I A</a>
       <ul class="right hide-on-med-and-down">
         {% for item in include.nav %}
           {% assign current = nil %}
@@ -21,7 +21,7 @@
   <li class="mobile-profile">
    <div class="profile-inner">
       <div class="pp-container">
-          <img src="images/person.jpg" alt="">
+          <img src="{{site.baseurl}}/images/person.jpg" alt="">
       </div>
       <h3>Ishwar Agarwal</h3>
     </div>

@@ -673,7 +673,8 @@ $(window).load(function(){
 			portImgArea = portfolioModal.find('.model-img'),
 			portTitle = portfolioModal.find('.modal-content .title'),
 			portContent = portfolioModal.find('.modal-content .m-content'),
-			portLink = portfolioModal.find('.modal-footer .modal-action');
+			portLink = portfolioModal.find('.modal-footer .modal-action'),
+			portSourceLink = portfolioModal.find('.modal-footer .source-link');
 
 		$('#protfolio-msnry').delegate('a.modal-trigger', 'click', function(e){
 			e.preventDefault();
@@ -687,8 +688,8 @@ $(window).load(function(){
 					var imgSrc = $this.data('image-source'),
 					title = $this.data('title'),
 					content = $this.data('content'),
-					demoLink = $this.data('demo-link');
-
+					detailsLink = $this.data('details-link'),
+					sourceLink = $this.data('source-link');
 
 					if ( imgSrc ) {
 						portImgArea.html('<img src="'+imgSrc+'" alt="Portfolio Image" />');
@@ -697,7 +698,8 @@ $(window).load(function(){
 
 					portTitle.text(title);
 					portContent.text(content);
-					portLink.attr('href', demoLink);
+					portLink.attr('href', detailsLink);
+					portSourceLink.attr('href', sourceLink);
 				}
 			});
 		});

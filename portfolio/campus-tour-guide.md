@@ -1,14 +1,16 @@
 ---
-layout: base
+layout: portfolio
 type: project
 title: Campus Tour Guide
-category: all algorithm design
+category: all algorithm
 description: The sole purpose of this project is to apply the TSP problem to find the best Hamiltotnian path for Berea College campus tour guides or visitors to generate tours for tourists with an option for selecting the buildings they want to visit at Berea College. We used the branch and bound algorithm to generate optimal solutions.
 github-url: https://github.com/agarwali/CampusTourGuide
-photo: ""
+media_source: campus-tour-guide.png
+thumbnail:
 ---
 
-Purpose: The sole purpose of this project is to apply the TSP problem to find the best Hamiltotnian path for Berea College campus tour guides or visitors to generate tours for tourists with an option for selecting the buildings they want to visit at Berea College. We used the branch and bound algorithm to generate optimal solutions.
+Purpose:  A campus tour generator application that generates the shortest Hamiltonian path given a
+set of buildings users want to visit. I used the branch and bound algorithm to generate optimal solutions.
 
 Instructions:
 To open the application run main.py in a Python 2.7 environment.

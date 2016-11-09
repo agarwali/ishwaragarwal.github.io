@@ -1,11 +1,12 @@
 ---
-layout: base
+layout: portfolio
 type: project
 title: AI Tic-Tac-Toe
-category: all algorithm design
+category: all algorithm
 description: A Tic Tac Toe game where the player cannot beat the computer. The artificial intelligence is impleneted using the min-max algorithm.
 github-url: https://github.com/agarwali/CampusTourGuide
-photo: ""
+media_source: tic-tac-toe.png
+thumbnail:
 ---
 ## Synopsis
 An artificially intelligent Tic Tac Toe gaming application where the computer is unbeatable.

@@ -8,28 +8,13 @@ layout: base
        <div class="clearfix blog-banner-text blog-single-banner">
          <div class="col-md-12">
            <h2 class="title">{{ page.title }}</h2>
-           <ul class="clearfix blog-post-meta">
-             <li>By {% if page.author %}{{ page.author }}{% endif %}
-             </li>
-             <li>{{ page.date | date: "%b %-d, %Y" }}</li>
-             <!-- <li><a href="#">5 Comments</a> -->
-             </li>
-             <li><a href="{{site.baseurl}}/category/{{page.category}}">
-               {% for cat in site.data.blogCategories %}
-                {% if cat.key == page.category %}
-                {{cat.name}}
-                {% endif %}
-               {% endfor %}
-              </a>
-             </li>
-           </ul>
          </div>
        </div>
      </div>
    </div>
  </section> <!-- ./Banner end -->
 
-  <!-- Blog Post Container-->
+  <!-- Portfolio Container-->
  <section id="all-posts" class="root-sec grey lighten-5 blogpage-posts-wrap">
    <div class="container">
      <div class="row">
@@ -39,7 +24,7 @@ layout: base
          <div class="col-sm-8">
            <article class="single-post-page">
              <div class="thumb-wrap">
-               <img src="{{page.media_source}}" alt="">
+               <img src="{% if page.media_source %}{{site.baseurl}}/images/portfolio/{{page.media_source}}{% endif %}" alt="">
              </div>
              <div class="single-post-content">{{content}}</div>
             {% include socialShare.html %}
@@ -69,22 +54,9 @@ layout: base
                  {% endfor %}
                </ul>
              </aside>
-             <!-- <aside class="single-widget">
-               <h2 class="widget-title">ARCHIVES</h2>
-               <ul>
-                 <li><a href="#">March 24, 2015</a>
-                 </li>
-               </ul>
-             </aside>
-             <aside class="single-widget">
-               <h2 class="widget-title">TAGS</h2>
-               <div class="widget-text">
-                 <a href="#" class="tags">Art</a>
-               </div>
-             </aside> -->
            </div>
          </div> <!-- ./sidebar end-->
        </div>
      </div>
    </div> <!-- ./container end-->
- </section>  <!-- ./Blog Post Container end-->
+ </section>  <!-- ./Portfolio Container end-->
