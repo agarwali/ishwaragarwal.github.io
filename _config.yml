@@ -4,7 +4,7 @@ exclude: ['README.md']
 permalink: pretty
 title: Ishwar Agarwal
 description: This is a personal website of Ishwar Agarwal, where he provides brief information about him, and his portfolio. He also has a blog
-gem:
+gems:
   - jekyll-feed
 sass:
   sass_dir: _scss
