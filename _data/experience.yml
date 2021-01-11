@@ -1,17 +1,24 @@
-- name: Berea College
-  logo: berea_college.png
+- name: Goldman Sachs
+  logo: goldman.jpg
   url: https://www.berea.edu/
-  start: May 2016
+  start: Jul 2018
   end: Present
-  position: Co-Lead Teaching Assistant
-  description: Manage a team of 18 Teaching Assistants, organize weekly departmental meetings and assist faculty in managing data structures course and tutor students in the weekly lab for a class of 53 students
+  position: Associate
+  description: Full-stack Software Engineer
 - name: Berea College
   logo: berea_college.png
   url: https://www.berea.edu/
   start: August 2015
-  end: Present
+  end: May 2018
   position: Student Programmer
   description: Design and develop 3 web applications used by 1600+ students and 300+ faculty and staff at Berea College working within a team of 8 students to make administrative workflow more efficient and reduce costs by $20,000
+- name: Berea College
+  logo: berea_college.png
+  url: https://www.berea.edu/
+  start: May 2016
+  end: May 2017
+  position: Co-Lead Teaching Assistant
+  description: Manage a team of 18 Teaching Assistants, organize weekly departmental meetings and assist faculty in managing data structures course and tutor students in the weekly lab for a class of 53 students
 - name: Interapt
   logo: interapt.png
   url: http://interapt.com/
